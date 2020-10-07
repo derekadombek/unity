@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 220316057}
   m_Layer: 0
   m_Name: Obstacle
-  m_TagString: Untagged
+  m_TagString: fuel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -484,11 +484,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 353729272, guid: 1f446ea73d5484063bc2fc5fb82d086e, type: 3}
       propertyPath: m_Mass
-      value: 0.01
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 353729272, guid: 1f446ea73d5484063bc2fc5fb82d086e, type: 3}
       propertyPath: m_Drag
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 353729274, guid: 1f446ea73d5484063bc2fc5fb82d086e, type: 3}
+      propertyPath: rcsThrust
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 353729274, guid: 1f446ea73d5484063bc2fc5fb82d086e, type: 3}
+      propertyPath: mainThrust
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 2004006864133639986, guid: 1f446ea73d5484063bc2fc5fb82d086e,
         type: 3}
@@ -697,16 +705,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5142757476030945193, guid: 67a8e9fb066db4d63a6357ad6aab1f02,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5142757476030945193, guid: 67a8e9fb066db4d63a6357ad6aab1f02,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9106995740929742458, guid: 67a8e9fb066db4d63a6357ad6aab1f02,
         type: 3}
