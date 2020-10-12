@@ -1,16 +1,14 @@
 ﻿<Properties StartupConfiguration="{D5A72845-CCE0-B921-8FE7-FD3F70160382}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Oscillator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rocket.cs">
     <Files>
-      <File FileName="Assets/Temp.cs" Line="10" Column="24" />
-      <File FileName="Assets/Rocket.cs" Line="11" Column="48" />
-      <File FileName="Assets/Oscillator.cs" Line="7" Column="9" />
+      <File FileName="Assets/Scripts/Rocket.cs" Line="145" Column="29" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="3_Boost" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Oscillator.cs" selected="True" />
+              <Node name="Scripts" expanded="True" selected="True" />
             </Node>
           </Node>
         </State>
@@ -19,7 +17,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0dd6a4d8-4c3b-49c6-b8f8-07b853d80872" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f153ed2b-cc6d-454e-a8d1-60b68202cf48" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

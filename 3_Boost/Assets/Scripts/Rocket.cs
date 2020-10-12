@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Rocket : MonoBehaviour
@@ -12,6 +13,8 @@ public class Rocket : MonoBehaviour
     [SerializeField] ParticleSystem deathParticles;
     [SerializeField] ParticleSystem successParticles;
     [SerializeField] float levelLoadDelay = 3f;
+    bool collisionsDisabled = false;
+
     enum State {  Alive, Dying, Transcending };
     State state = State.Alive;
     Rigidbody rigidBody;
@@ -30,6 +33,23 @@ public class Rocket : MonoBehaviour
         {
             RespondToRotateInput();
             RespondToThrustInput();
+        }
+
+        //if (Debug.isDebugBuild)
+        {
+            RespondToDebugInput();
+        }
+    }
+
+    private void RespondToDebugInput()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            LoadNextLevel();
+        }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            collisionsDisabled = !collisionsDisabled;
         }
     }
 
@@ -77,7 +97,7 @@ public class Rocket : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (state != State.Alive) { return; }
+        if (state != State.Alive || collisionsDisabled) { return; }
         switch (collision.gameObject.tag)
         {
             case "Friendly":
@@ -112,12 +132,21 @@ public class Rocket : MonoBehaviour
     private void LoadFirstLevel()
     {
         state = State.Alive;
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
     private void LoadNextLevel()
     {
         state = State.Alive;
-        SceneManager.LoadScene(0);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
+        print("SceneCount " + SceneManager.sceneCountInBuildSettings);
+        print("Current Scene Index " + currentSceneIndex);
+        if(nextSceneIndex == SceneManager.sceneCountInBuildSettings)
+        {
+            nextSceneIndex = 0;
+        }
+        print("Next Scene Index " + nextSceneIndex);
+        SceneManager.LoadScene(nextSceneIndex);
     }
 }
