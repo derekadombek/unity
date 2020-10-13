@@ -7,8 +7,8 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="3_Boost" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True" selected="True" />
+            <Node name="Assets" expanded="True" selected="True">
+              <Node name="Scripts" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -17,7 +17,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f153ed2b-cc6d-454e-a8d1-60b68202cf48" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="94d84ff0-36a1-44c0-a2dc-8cdf9cb0d1ac" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

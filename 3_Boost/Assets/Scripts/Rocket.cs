@@ -132,7 +132,7 @@ public class Rocket : MonoBehaviour
     private void LoadFirstLevel()
     {
         state = State.Alive;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     private void LoadNextLevel()

@@ -42,8 +42,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.36862746, g: 0.38519087, b: 0.4392157, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.42649794, g: 0.4392157, b: 0.36862746, a: 1}
+  m_Intensity: 1.5
   m_Range: 22
   m_SpotAngle: 64
   m_InnerSpotAngle: 6
@@ -571,7 +571,7 @@ GameObject:
   - component: {fileID: 3683625989275562059}
   m_Layer: 0
   m_Name: Rocket Ship 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -651,7 +651,7 @@ AudioSource:
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
